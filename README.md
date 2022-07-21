@@ -6,12 +6,15 @@ composer require harrygulliford/laravel-firebird
 
 
 ## Use to send to Frontend:
-$data = [
-  'status' => true,
-  'msg' => ' ',
-  'data' => $dataofreturn,
-];
-return $this->returnQuery($data);
+public function returntofront()
+{ 
+  $dataodreturn = 'data';
+  $data = [
+    'status' => true,
+    'msg' => ' ',
+    'data' => $dataofreturn,
+  ];
+  return $this->returnQuery($data);
 
 ## Alter function returnQuery in Controller.php:
 
