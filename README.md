@@ -1,7 +1,8 @@
 # Set-UTF-8-Laravel-Firebird
 Error: "Malformed UTF-8 characters, possibly incorrectly encoded", when trying to return data with base Firebird utf8 field
 
-Install : composer require harrygulliford/laravel-firebird
+## Install : 
+composer require harrygulliford/laravel-firebird
 
 
 ## Use to send to Frontend:
@@ -30,6 +31,7 @@ return $this->returnQuery($data);
     
 ## Alter config databese in databese.php:
 
+'connections' => [
   'firebird' => [
         'driver'   => 'firebird',
         'host'     => env('DB_HOST', 'localhost'),
@@ -41,4 +43,5 @@ return $this->returnQuery($data);
         'collation' => 'utf8_general_ci'
         'role'     => null,
     ],
+ }   
 
