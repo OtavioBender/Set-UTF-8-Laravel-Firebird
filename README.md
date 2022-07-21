@@ -14,9 +14,19 @@ public function returntofront()
     'msg' => ' ',
     'data' => $dataofreturn,
   ];
-  return $this->returnQuery($data);
+  return $this->returntofront($data);
 } 
-
+    public function returnQuery(array $query)
+    { 
+       $dataodreturn = 'data';
+       $data = [
+          'status' => true,
+          'msg' => ' ',
+          'data' => $dataofreturn,
+        ];
+       return $this->returntofront($data);
+    }
+    
 ## Alter function returnQuery in Controller.php:
 
     public function returnQuery(array $query)
