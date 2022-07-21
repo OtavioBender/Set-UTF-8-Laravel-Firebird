@@ -31,17 +31,17 @@ return $this->returnQuery($data);
     
 ## Alter config databese in databese.php:
 
-'connections' => [
-  'firebird' => [
-        'driver'   => 'firebird',
-        'host'     => env('DB_HOST', 'localhost'),
-        'port'     => env('DB_PORT', '3050'),
-        'database' => env('DB_DATABASE', '/path_to/database.fdb'),
-        'username' => env('DB_USERNAME', 'sysdba'),
-        'password' => env('DB_PASSWORD', 'masterkey'),
-        'charset'  => env('DB_CHARSET', 'UTF8'),
-        'collation' => 'utf8_general_ci'
-        'role'     => null,
+'connections' => [ <br />
+  'firebird' => [ <br />
+        'driver'   => 'firebird', <br />
+        'host'     => env('DB_HOST', 'localhost'), <br />
+        'port'     => env('DB_PORT', '3050'), <br />
+        'database' => env('DB_DATABASE', '/path_to/database.fdb'), <br />
+        'username' => env('DB_USERNAME', 'sysdba'), <br />
+        'password' => env('DB_PASSWORD', 'masterkey'), <br />
+        'charset'  => env('DB_CHARSET', 'UTF8'), <br />
+        'collation' => 'utf8_general_ci' <br />
+        'role'     => null, <br />
     ],
  }   
 
