@@ -15,6 +15,7 @@ public function returntofront()
     'data' => $dataofreturn,
   ];
   return $this->returnQuery($data);
+} 
 
 ## Alter function returnQuery in Controller.php:
 
