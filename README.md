@@ -6,16 +6,7 @@ composer require harrygulliford/laravel-firebird
 
 
 ## Use to send to Frontend:
-public function returntofront()
-{ 
-  $dataodreturn = 'data';
-  $data = [
-    'status' => true,
-    'msg' => ' ',
-    'data' => $dataofreturn,
-  ];
-  return $this->returntofront($data);
-} 
+
     public function returnQuery(array $query)
     { 
        $dataodreturn = 'data';
