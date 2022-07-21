@@ -42,6 +42,6 @@ return $this->returnQuery($data);
         'charset'  => env('DB_CHARSET', 'UTF8'), <br />
         'collation' => 'utf8_general_ci' <br />
         'role'     => null, <br />
-    ],
- }   
+    ], <br />
+ ]
 
